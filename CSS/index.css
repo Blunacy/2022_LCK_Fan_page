@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    height: 98.5vh;
+    background: url('images/league\ of\ legends.jpg') no-repeat center;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.container .header {
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container .nav ul li {
+    padding-top: 30px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container .nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container .nav ul li a:hover {
+    color: #e83e19;
+}
+
+.container .main {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.container .main h1 {
+    font-size: 100px;
+}
+
+.container .main h2 {
+    font-size: 70px;
+}
+
+.container .main p {
+    font-size: 20px;
+}

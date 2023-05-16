@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("images/register.jpg") no-repeat center;
+    background-size: cover;
+}
+body::before {
+    content: "";
+    position: absolute; z-index: 1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    position: relative; z-index: 2;
+}
+.main input{
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(155, 9, 9);
+    font-size: 18px; color: #fff;
+    outline: none;
+}
+
+.main label {
+    position: absolute; left: 10px; top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    transition: top .5s ease;
+}
+.main li {
+    position: relative;
+    list-style: none;
+}
+.main input:focus + label,
+.main input:valid + label {
+    top: -2px;
+    font-size: 13px; color: #73ec83;
+}
+.main select{
+    margin-top: 50px;
+    width: 300px;
+    padding: 5px;
+    background-color: rgb(222, 243, 137);
+    border-radius: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(155, 9, 9);
+}
+.main textarea {
+    margin-top: 50px;
+    background-color: rgb(222, 243, 137);
+    border-radius: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main .user{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+}
+.btn-box button {
+    width: 40%; height: 30px;
+    background: #e83e19;
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+.container h1 img{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    right: 969px;
+    bottom: 832px;
+}
+
+

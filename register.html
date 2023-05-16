@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form action="index.html">
+    <div class="container">
+        
+        <div class="main">
+            <div class="user">회 원 정 보</div>
+            <ul>
+                <li>
+                    <input type="text" id="uid"  required>
+                    <label for="uid">회원 ID</label>
+                </li>
+                <li>
+                    <input type="email" id="umail" required>
+                    <label for="umail">E-MAIL</label>
+                </li>
+                <li>
+                    <input type="password" id="pwd1" required>
+                    <label for="pwd1">비밀번호</label>
+                </li>
+                <li>
+                    <input type="password" id="pwd2" required>
+                    <label for="pwd2">비밀번호 확인</label>
+                </li>
+                <li>
+                    <label for="path">가입 경로</label>
+                    <select id="path">
+                        <option value="">---Select---</option>
+                        <option value="sns">SNS</option>
+                        <option value="notion">NOTION</option>
+                        <option value="etc">Other</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="memo">-MEMO-</label>
+                    <textarea cols="80" rows="10" placeholder="하고 싶은 말 있으면 편하게 적어 주세요."></textarea>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="btn-box">
+            <button id="btn" type="submit">회원가입</button>
+            <button id="btn2" type="reset">취소</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
